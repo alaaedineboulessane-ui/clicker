@@ -1,0 +1,34 @@
+    #gokuButton {
+        background: none;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+        display: block;
+        margin: auto;
+    }
+
+    #gokuButton img {
+        display: block;
+    }
+
+    #genkidamaContainer {
+        display: none;
+        text-align: center;
+    }
+
+    #genkidama {
+        display: block;
+        margin: auto;
+    }
+
+    #clickCount {
+        text-align: center;
+        margin-top: 10px;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+
+    #conteneur {
+        margin-top: 200px;
+    }
