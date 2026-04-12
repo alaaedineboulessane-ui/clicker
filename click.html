@@ -4,20 +4,20 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Dragon Ball Clicker</title>
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 <link href="click.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<style>
-
-</style>
 </head>
+
 <body style="background-image: url('https://wallpaperaccess.com/full/629584.png'); background-size: cover;">
+
 <nav>
     <div class="nav-wrapper">
         <a href="#!" class="brand-logo">Dragon Ball Legion</a>
         <ul class="right hide-on-med-and-down">
-            <li><a href="sass.html"><img src="./img/goku.png" width="100px"></a></li>
-            <li><a href="badges.html"><img src="./img/vegeta.png" width="100px"></a></li>
+            <li><a href="sass.html"><img src="./img/goku.png" width="100"></a></li>
+            <li><a href="badges.html"><img src="./img/vegeta.png" width="100"></a></li>
         </ul>
     </div>
 </nav>
@@ -27,105 +27,273 @@
     <div class="col s6">
 
         <div id="conteneur">
-            <p id = "data">Goku est calme</p>
-            <div id="genkidamaContainer">
-                <img id="genkidama" src="./img/Genkidama_DB_scheme.png">
-            </div>
+            <p id="data">Goku est calme</p>
+
             <button class="transform" id="gokuButton">
-                <img id="kagu" src="./img/kugo.png" width="100px">
+                <img id="kagu" src="./img/kugo.png" width="100">
             </button>
+
             <dialog id="modal">
-            <h2 id = "titre">Hello !</h2>
-            <img src = "" id = "images">
-            <button onclick="modal.close()" id = "closeModal">Fermer</button>
+                <h2 id="titre">Hello !</h2>
+                <img src="" id="images">
+                <button onclick="modal.close()" id="closeModal">Fermer</button>
             </dialog>
         </div>
+
         <div id="stats">
             <div id="clickCount">Nombre de clicks : 0</div>
             <div id="valcount">Ki collectés : 0</div>
         </div>
+
     </div>
-
-
-
-
-
 
     <div class="col s6">
-        <ul class="collection">
-            <li id = "li1" class="collection-item">2p par click<button class="achat" id ="achat1">200ki</button></li>
-            <li id = "li2" class="collection-item">20p par click<button class="achat" id = "achat2">500ki</button></li>
-            <li id = "li3" class="collection-item">100p par click<button class="achat" id = "achat3">1000ki</button></li>
-            <li id = "li4" class="collection-item">500p par click<button class="achat" id = "achat4">2000ki</button></li>
-            <li id = "li5" class="collection-item">2000p par click<button class="achat" id = "achat5">500000ki</button></li>
-            <li id = "li6" class="collection-item">Faire un genki dama !<button class="achat" id = "achat6">Maitrise ton esprit !</button></li>
+        <ul class="collection" id="listt">
+            <li class="collection-item">2p par click <button class="achat" id="achat1"><a>200ki</a></button></li>
+            <li class="collection-item">20p par click <button class="achat" id="achat2"><a>500ki</a></button></li>
+            <li class="collection-item">100p par click <button class="achat" id="achat3"><a>1000ki</a></button></li>
+            <li class="collection-item">500p par click <button class="achat" id="achat4"><a>2000ki</a></button></li>
+            <li class="collection-item">2000p par click <button class="achat" id="achat5"><a>500000ki</a></button></li>
+            <li class="collection-item">Faire un genki dama ! <button class="achat" id="achat6"><a>Maitrise ton esprit !</a></button></li>
         </ul>
     </div>
+
 </div>
 
+<div class="slider" id="top1">
 
+    <h5 class="center-align boss">Recrute des alliés !</h5>
 
-<div class="slider">
-  <div class="slide-track">
-    <img src="img/majin.gif" height="150">
-    <img src="img/taunt.gif" height="150">
-    <img src="img/bulma.gif" height="150">
-    <img src="img/tortue.gif" height="150">
-    <img src="img/ten.gif" height="150">
-    <img src="img/satan.gif" height="150">
-    <img src="img/yamcha.gif" height="150">
-    <img src="img/trunks.gif" height="150">
-    <img src="img/goten.gif" height="150">
-    <img src="img/piccolo.gif" height="150">
-    <img src="img/gohan.gif" height="150">
+    <div class="slide-track">
 
+        <button id="img1" class="transform card">
+            <img class = "majin" src="img/majin.gif" height="150" alt="Majin Vegeta">
+            <span class="label">Majin Vegeta</span>
+        </button>
 
-    <img src="img/majin.gif" height="150">
-    <img src="img/taunt.gif" height="150">
-    <img src="img/bulma.gif" height="150">
-    <img src="img/tortue.gif" height="150">
-    <img src="img/ten.gif" height="150">
-    <img src="img/satan.gif" height="150">
-    <img src="img/yamcha.gif" height="150">
-    <img src="img/trunks.gif" height="150">
-    <img src="img/goten.gif" height="150">
-    <img src="img/piccolo.gif" height="150">
-    <img src="img/gohan.gif" height="150">
-  </div>
+        <button id="img2" class="transform card">
+            <img class = "taunt" src="img/taunt.gif" height="150" alt="Krillin">
+            <span class="label">Krillin</span>
+        </button>
+
+        <button id="img3" class="transform card">
+            <img class = "bulma" src="img/bulma.gif" height="150" alt="Bulma">
+            <span class="label">Bulma</span>
+        </button>
+
+        <button id="img4" class="transform card">
+            <img class = "tortue" src="img/tortue.gif" height="150" alt="Tortue Géniale">
+            <span class="label">Tortue Géniale</span>
+        </button>
+
+        <button id="img5" class="transform card">
+            <img class = "ten" src="img/ten.gif" height="150" alt="TenShinHan">
+            <span class="label">TenShinHan</span>
+        </button>
+
+        <button id="img6" class="transform card">
+            <img class ="satan" src="img/satan.gif" height="150" alt="Mr Satan">
+            <span class="label">Mr Satan</span>
+        </button>
+
+        <button id="img7" class="transform card">
+            <img class = "yamcha" src="img/yamcha.gif" height="150" alt="Yamcha">
+            <span class="label">Yamcha</span>
+        </button>
+
+        <button id="img8" class="transform card">
+            <img class = "trunks" src="img/trunks.gif" height="150" alt="Trunks">
+            <span class="label">Trunks</span>
+        </button>
+
+        <button id="img9" class="transform card">
+            <img class = "goten" src="img/goten.gif" height="150" alt="Goten">
+            <span class="label">Goten</span>
+        </button>
+
+        <button id="img10" class="transform card">
+            <img class = "piccolo" src="img/piccolo.gif" height="150" alt="Piccolo">
+            <span class="label">Piccolo</span>
+        </button>
+
+        <button id="img11" class="transform card">
+            <img class = "gohan" src="img/gohan.gif" height="150" alt="Gohan">
+            <span class="label">Gohan</span>
+        </button>
+        <button id="img1" class="transform card">
+            <img class = "majin" src="img/majin.gif" height="150" alt="Majin Vegeta">
+            <span class="label">Majin Vegeta</span>
+        </button>
+
+        <button id="img2" class="transform card">
+            <img class = "taunt" src="img/taunt.gif" height="150" alt="Krillin">
+            <span class="label">Krillin</span>
+        </button>
+
+        <button id="img3" class="transform card">
+            <img class = "bulma" src="img/bulma.gif" height="150" alt="Bulma">
+            <span class="label">Bulma</span>
+        </button>
+
+        <button id="img4" class="transform card">
+            <img class = "tortue" src="img/tortue.gif" height="150" alt="Tortue Géniale">
+            <span class="label">Tortue Géniale</span>
+        </button>
+
+        <button id="img5" class="transform card">
+            <img class = "ten" src="img/ten.gif" height="150" alt="TenShinHan">
+            <span class="label">TenShinHan</span>
+        </button>
+
+        <button id="img6" class="transform card">
+            <img class = "satan" src="img/satan.gif" height="150" alt="Mr Satan">
+            <span class="label">Mr Satan</span>
+        </button>
+
+        <button id="img7" class="transform card">
+            <img class = "yamcha" src="img/yamcha.gif" height="150" alt="Yamcha">
+            <span class="label">Yamcha</span>
+        </button>
+
+        <button id="img8" class="transform card">
+            <img class = "trunks" src="img/trunks.gif" height="150" alt="Trunks">
+            <span class="label">Trunks</span>
+        </button>
+
+        <button id="img9" class="transform card">
+            <img class = "goten" src="img/goten.gif" height="150" alt="Goten">
+            <span class="label">Goten</span>
+        </button>
+
+        <button id="img10" class="transform card">
+            <img class = "piccolo" src="img/piccolo.gif" height="150" alt="Piccolo">
+            <span class="label">Piccolo</span>
+        </button>
+
+        <button id="img11" class="transform card">
+            <img class = "gohan" src="img/gohan.gif" height="150" alt="Gohan">
+            <span class="label">Gohan</span>
+        </button>
+
+    </div>
+
+    <h5 class="center-align boss">Ce sont des méchants ! Bats les tous !</h5>
+
+<div class="slide-track">
+    <button class="transform card">
+        <img src="img/broly.gif" height="150">
+        <span class="label">Broly</span>
+    </button>
+
+    <button class="transform card">
+        <img src="img/zamasu.gif" height="150">
+        <span class="label">Zamasu</span>
+    </button>
+
+    <button class="transform card">
+        <img src="img/max.gif" height="150">
+        <span class="label">Cell Max</span>
+    </button>
+
+    <button class="transform card">
+        <img src="img/perfect.gif" height="150">
+        <span class="label">Cell Parfait</span>
+    </button>
+
+    <button class="transform card">
+        <img src="img/freezer.gif" height="150">
+        <span class="label">Freezer</span>
+    </button>
+
+    <button class="transform card">
+        <img src="img/thales.gif" height="150">
+        <span class="label">Thalès</span>
+    </button>
+
+    <button class="transform card">
+        <img src="img/hit.gif" height="150">
+        <span class="label">Hit</span>
+    </button>
+
+    <button class="transform card">
+        <img src="img/jiren.gif" height="150">
+        <span class="label">Jiren</span>
+    </button>
+
+    <button class="transform card">
+        <img src="img/brolyz.gif" height="150">
+        <span class="label">Broly (Z)</span>
+    </button>
+
+    <button class="transform card">
+        <img src="img/c17.gif" height="150">
+        <span class="label">C-17</span>
+    </button>
+
+    <button class="transform card">
+        <img src="img/janemba.gif" height="150">
+        <span class="label">Janemba</span>
+    </button>
+
+    <button class="transform card">
+        <img src="img/broly.gif" height="150">
+        <span class="label">Broly</span>
+    </button>
+
+    <button class="transform card">
+        <img src="img/zamasu.gif" height="150">
+        <span class="label">Zamasu</span>
+    </button>
+
+    <button class="transform card">
+        <img src="img/max.gif" height="150">
+        <span class="label">Cell Max</span>
+    </button>
+
+    <button class="transform card">
+        <img src="img/perfect.gif" height="150">
+        <span class="label">Cell Parfait</span>
+    </button>
+
+    <button class="transform card">
+        <img src="img/freezer.gif" height="150">
+        <span class="label">Freezer</span>
+    </button>
+
+    <button class="transform card">
+        <img src="img/thales.gif" height="150">
+        <span class="label">Thalès</span>
+    </button>
+
+    <button class="transform card">
+        <img src="img/hit.gif" height="150">
+        <span class="label">Hit</span>
+    </button>
+
+    <button class="transform card">
+        <img src="img/jiren.gif" height="150">
+        <span class="label">Jiren</span>
+    </button>
+
+    <button class="transform card">
+        <img src="img/brolyz.gif" height="150">
+        <span class="label">Broly (Z)</span>
+    </button>
+
+    <button class="transform card">
+        <img src="img/c17.gif" height="150">
+        <span class="label">C-17</span>
+    </button>
+
+    <button class="transform card">
+        <img src="img/janemba.gif" height="150">
+        <span class="label">Janemba</span>
+    </button>
 </div>
 
-
-<div class="slider">
-  <div class="slide-track">
-    <img src="img/broly.gif" height="150">
-    <img src="img/zamasu.gif" height="150">
-    <img src="img/max.gif" height="150">
-    <img src="img/perfect.gif" height="150">
-    <img src="img/freezer.gif" height="150">
-    <img src="img/thales.gif" height="150">
-    <img src="img/hit.gif" height="150">
-    <img src="img/jiren.gif" height="150">
-    <img src="img/brolyz.gif" height="150">
-    <img src="img/c17.gif" height="150">
-    <img src="img/janemba.gif" height="150">
-
-
-    <img src="img/broly.gif" height="150">
-    <img src="img/zamasu.gif" height="150">
-    <img src="img/max.gif" height="150">
-    <img src="img/perfect.gif" height="150">
-    <img src="img/freezer.gif" height="150">
-    <img src="img/thales.gif" height="150">
-    <img src="img/hit.gif" height="150">
-    <img src="img/jiren.gif" height="150">
-    <img src="img/brolyz.gif" height="150">
-    <img src="img/c17.gif" height="150">
-    <img src="img/janemba.gif" height="150">
-  </div>
 </div>
 
+<script src="click.js"></script>
 
-<script src = "click.js">
-</script>
 </body>
 </html>

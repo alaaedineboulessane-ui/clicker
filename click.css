@@ -1,3 +1,4 @@
+
 #gokuButton {
     background: none;
     border: none;
@@ -6,30 +7,45 @@
     display: block;
     margin: auto;
 }
+
 #gokuButton img {
     display: block;
 }
-#genkidamaContainer {
-    display: none;
-    text-align: center;
-}
+
 #genkidama {
     display: block;
     margin: auto;
 }
+
 #clickCount {
-    text-align: center;
     margin-top: 10px;
     font-size: 18px;
     font-weight: bold;
 }
+
 #conteneur {
-    margin-top: 200px;
+    margin-top: 50px;
 }
+
+
+.transform {
+    transition: transform 0.12s ease, filter 0.12s ease;
+}
+
 .transform.click-effect {
-    transform: scale(1.1);
-    transition: transform 0.15s;
+    transform: scale(1.15);
 }
+
+.slide-track button.click-effect {
+    transform: scale(1.2) !important;
+    filter: brightness(1.6) !important;
+}
+
+.slide-track button:active,
+.transform:active {
+    transform: scale(0.92);
+}
+
 
 .collection {
     border: none;
@@ -38,7 +54,21 @@
 
 .achat {
     float: right;
+    border: none;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.2s;
 }
+
+.achat:hover {
+    background-color: rgba(255, 120, 0, 1);
+    transform: scale(1.05);
+    box-shadow: 0 0 10px orange;
+}
+
 
 #kagu {
     transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -47,45 +77,20 @@
 }
 
 #kagu:hover {
-    transform: scale(0.9);      
-    cursor: pointer;             
+    transform: scale(1.05);
 }
 
-#imageModal {
-    display:none; 
-    position:fixed; 
-    top:0; 
-    left:0; 
-    width:100%; 
-    height:100%; 
-    background:rgba(0,0,0,0.8); 
-    justify-content:center; 
-    align-items:center;
-}
 
-#modal{
-    width: 1000px;
-    height: auto;
-    height: 800px;
-}
-
-#images{
-    width: 700px;
-    text-align: center;
+#stats {
+    display: flex;
     justify-content: center;
+    gap: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: white;
+    text-shadow: 1px 1px 2px black;
 }
-
-    #stats {
-        display: flex;
-        justify-content: center;
-        gap: 50px;
-        font-size: 18px;
-        font-weight: bold;
-        margin-top: 10px;
-        color: white;
-        text-shadow: 1px 1px 2px black;
-    }
-
 
 #data {
     text-align: center;
@@ -93,28 +98,94 @@
     color: white;
 }
 
-
-.slider{
-  overflow: hidden;
-  width: 100%;
-  margin-top: 100px;
+.slider {
+    width: 100%;
 }
 
-.slide-track{
-  display: flex;
-  width: calc(250px * 16);
-  animation: scroll 20s linear infinite;
+#top1 {
+    margin-top: 50px;
 }
 
-.slide-track img{
-  margin-right: 20px;
+.slide-track {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    animation: scroll 20s linear infinite;
 }
 
-@keyframes scroll{
-  0%{
-    transform: translateX(0);
-  }
-  100%{
+.slide-track button {
+    flex: 0 0 auto;
+    padding: 0;
+    margin: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.12s ease, filter 0.12s ease;
+}
+
+
+.slide-track button:hover {
+    transform: scale(1.05);
+}
+
+
+.slide-track img {
+    display: block;
+    margin: 0;
+    border: 2px solid white;
+    border-radius: 8px;
+}
+
+.card {
+    position: relative;
+    flex: 0 0 auto;
+    display: inline-block;
+}
+
+.card img {
+    display: block;
+    height: 150px;
+    width: auto;
+}
+
+.card .label {
+    position: absolute;
+    bottom: 6px;
+    left: 50%;
     transform: translateX(-50%);
-  }
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px black;
+    white-space: nowrap;
+    pointer-events: none;
 }
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+
+.collection-item {
+    background-color: rgba(255, 140, 0, 0.2) !important;
+    border: 1px solid rgba(255, 165, 0, 0.5);
+    color: white;
+    text-shadow: 1px 1px 2px black;
+}
+
+
+.boss {
+    color: white;
+    margin-bottom: 20px;
+}
+
+
+.slide-track button img {
+    opacity: 0;
+}
+
+
