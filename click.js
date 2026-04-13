@@ -281,43 +281,73 @@ button.addEventListener('click', function() {
     if (click >= 500000000) {
         image.src = "img/gogetassj4.png";
         data.textContent = "On attent la forme la plus belle de gogeta, le gogeta super saiyan 4.";
-        image.width = 150;
+        image.width = 300;
         image.height = auto;
         alert("Bravo tu as fini le jeu, il n'y a plus de transformations après.")
 
     }
     
-    else if (click >= 400000000) {
+    else if (click >= 400000000000) {
         image.src = "img/gogetablue.png";
         data.textContent = "Gogeta devient toujours plus fort et se transforme en super saiyan blue !";
+        setInterval(() => {
+            click+= 1000000000;
+        display.textContent = "Nombre de clicks : " + click;
+        valeur.textContent = "Ki collectioné : " + val;
+        val+= coeff;
+        }, 1000);
         image.width = 150;
         image.height = auto;
     }
     
-    else if (click >= 300000000) {
+    else if (click >= 300000000000) {
         image.src = "img/gogetasuper.png";
         data.textContent = "Gogeta entame sa première transformation ! Le super saiyan !";
+        setInterval(() => {
+            click+= 500000000;
+        display.textContent = "Nombre de clicks : " + click;
+        valeur.textContent = "Ki collectioné : " + val;
+        val+= coeff;
+        }, 1000);
         image.width = 150;
         image.height = auto;
     }
     
-    else if (click >= 200000000) {
+    else if (click >= 20000000000) {
         image.src = "img/gogeta.png";
         data.textContent = "Mais il y'a une autre manière de fusionner, la dance métamole ! Voilà donc Gogeta !";
+        setInterval(() => {
+            click+= 50000000;
+        display.textContent = "Nombre de clicks : " + click;
+        valeur.textContent = "Ki collectioné : " + val;
+        val+= coeff;
+        }, 1000);
         image.width = 150;
         image.height = auto;
     }
     
-    else if (click >= 100000000) {
+    else if (click >= 1000000000) {
         image.src = "img/vegettossj4.png";
         data.textContent = "Dans un autre univers, dans une autre vie, Vegetto atteins la forme super saiyan 4, c'est trop beau !";
+        setInterval(() => {
+            click+= 10000000;
+        display.textContent = "Nombre de clicks : " + click;
+        valeur.textContent = "Ki collectioné : " + val;
+        val+= coeff;
+        }, 1000);
         image.width = 150;
         image.height = auto;
     }
     
-    else if (click >= 50000000) {
+    else if (click >= 500000000) {
         image.src = "img/vegettossjb.png";
         data.textContent = "Vegetto atteint sa prochaine forme ! Le SSJB !";
+        setInterval(() => {
+            click+= 5000000;
+        display.textContent = "Nombre de clicks : " + click;
+        valeur.textContent = "Ki collectioné : " + val;
+        val+= coeff;
+        }, 1000);
         image.width = 150;
         image.height = auto;
 
@@ -325,7 +355,13 @@ button.addEventListener('click', function() {
     
     else if (click >= 20000000) {
         image.src = "img/vegettosuper.png";
-        data.textContent = "Vegetto passe à sa première transformation ! Vegetto Super !"
+        data.textContent = "Vegetto passe à sa première transformation ! Vegetto Super !";
+        setInterval(() => {
+            click+= 1000000;
+        display.textContent = "Nombre de clicks : " + click;
+        valeur.textContent = "Ki collectioné : " + val;
+        val+= coeff;
+        }, 1000);
         image.width = 150;
         image.height = auto;
     }
@@ -333,6 +369,12 @@ button.addEventListener('click', function() {
     else if (click >= 12000000) {
         image.src = "img/vegetto.png";
         data.textContent = "Ils ont changé de methode de fusion et ont réussi, voilà VEGETTO !";
+        setInterval(() => {
+            click+= 500000;
+        display.textContent = "Nombre de clicks : " + click;
+        valeur.textContent = "Ki collectioné : " + val;
+        val+= coeff;
+        }, 1000);
         image.width = 150;
         image.height = auto;
     }
@@ -340,6 +382,12 @@ button.addEventListener('click', function() {
     else if (click >= 10000000) {
         image.src = "img/fail.png";
         data.textContent = "Goku et Vegeta ont essayé de fusionner mais ça n'a pas marché !"
+        setInterval(() => {
+            click+= 100000;
+        display.textContent = "Nombre de clicks : " + click;
+        valeur.textContent = "Ki collectioné : " + val;
+        val+= coeff;
+        }, 1000);
         image.width = 150;
         image.height = auto;
     }
@@ -347,6 +395,12 @@ button.addEventListener('click', function() {
     else if (click >= 1000000) {
         image.src = "img/cc.png";
         data.textContent = "Cette forme ne devrait pas exister, elle est trop puissante !";
+        setInterval(() => {
+            click+= 50000;
+        display.textContent = "Nombre de clicks : " + click;
+        valeur.textContent = "Ki collectioné : " + val;
+        val+= coeff;
+        }, 1000);
         image.width = 150;
         image.height = auto;
 
@@ -355,6 +409,12 @@ button.addEventListener('click', function() {
     else if (click >= 500000) {
         image.src = "img/mui.png";
         data.textContent = "Il dépasse encore ses limites c'est incroyable !";
+        setInterval(() => {
+            click+= 25000;
+        display.textContent = "Nombre de clicks : " + click;
+        valeur.textContent = "Ki collectioné : " + val;
+        val+= coeff;
+        }, 1000);
         image.width = 150;
         image.height = auto;
     }
@@ -383,7 +443,8 @@ button.addEventListener('click', function() {
     
     else if (click >= 5000) {
         image.src = "img/ssjgod.png"
-        data.textContent = "La transformation divine ! Goku a atteint le ssj god !"
+        data.textContent = "La transformation divine ! Goku a atteint le ssj god !";
+
         image.width = 150;
         image.height = auto;
     }
@@ -392,11 +453,13 @@ button.addEventListener('click', function() {
         data.textContent = "C'est du jamais vu ! Goku est devenu un super saiyan 4"
         image.width = 150;
         image.height = auto;
+        
     } else if (click >= 700) {
         image.src = "img/gokussj3.png";
         data.textContent = "Goku vient de dépasser le super saiyan ! il a debloqué le super saiyan 3 !"
         image.width = 150;
         image.height = auto;
+
     } else if (click >= 500) {
         image.src = "img/ssj2.png";
         data.textContent = "Goku vient de dépasser le super saiyan ! il a debloqué le super saiyan 2 !"
