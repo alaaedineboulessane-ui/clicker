@@ -185,7 +185,7 @@
 
 
 .slide-track button img {
-    opacity: 0;
+  filter: blur(10px);
 }
 
 

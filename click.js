@@ -53,7 +53,7 @@ image1.addEventListener('click', function() {
     if (val >= 5000) {
         alert("tu as debloqué vegeta majin bien joué !");
 for (let i = 0; i < majin.length; i++) {
-    majin[i].style.opacity = "1";
+    majin[i].style.filter = "none";;
 }
         val -= 5000
         setInterval(() => {
@@ -72,7 +72,7 @@ image2.addEventListener('click', function() {
     if (val >= 10000) {
         alert("tu as debloqué krillin bien joué !");
 for (let i = 0; i < taunt.length; i++) {
-    taunt[i].style.opacity = "1";
+    taunt[i].style.filter = "none";;
 }
         val -= 10000
         setInterval(() => {
@@ -91,7 +91,7 @@ image3.addEventListener('click', function() {
     if (val >= 50000) {
         alert("Bon je vais t'aider, mais que pour cette fois !");
 for (let i = 0; i < bulma.length; i++) {
-    bulma[i].style.opacity = "1";
+    bulma[i].style.filter = "none";;
 }
         val -= 50000
         setInterval(() => {
@@ -111,7 +111,7 @@ image4.addEventListener('click', function() {
     if (val >= 100000) {
         alert("Allez je vais t'apprendre la technique du kamehameha !");
 for (let i = 0; i < tortue.length; i++) {
-    tortue[i].style.opacity = "1";
+    tortue[i].style.filter = "none";;
 }
         val -= 100000
         setInterval(() => {
@@ -131,7 +131,7 @@ image5.addEventListener('click', function() {
     if (val >= 500000) {
         alert("Je vais rejoindre ton équipe mais c'est pas par plaisir.");
 for (let i = 0; i < ten.length; i++) {
-    ten[i].style.opacity = "1";
+    ten[i].style.filter = "none";;
 }
         val -= 500000;
         setInterval(() => {
@@ -151,7 +151,7 @@ image6.addEventListener('click', function() {
     if (val >= 1000000) {
         alert("Je suis trop fort pour toi mais bien sûr je vais t'aider");
 for (let i = 0; i < satan.length; i++) {
-    satan[i].style.opacity = "1";
+    satan[i].style.filter = "none";;
 }
         val -= 1000000;
         setInterval(() => {
@@ -171,7 +171,7 @@ image7.addEventListener('click', function() {
     if (val >= 5000000) {
         alert("Je vais t'aider dans ta quête, pour Bulma !");
 for (let i = 0; i < yamcha.length; i++) {
-    yamcha[i].style.opacity = "1";
+    yamcha[i].style.filter = "none";;
 }
         val -= 5000000;
         setInterval(() => {
@@ -191,7 +191,7 @@ image8.addEventListener('click', function() {
     if (val >= 50000000) {
         alert("Je vais t'aider dans ta quête, pour Bulma !");
 for (let i = 0; i < trunks.length; i++) {
-    trunks[i].style.opacity = "1";
+    trunks[i].style.filter = "none";;
 }
         val -= 50000000;
         setInterval(() => {
@@ -211,7 +211,7 @@ image9.addEventListener('click', function() {
     if (val >= 500000000) {
         alert("Je le fais pour papa !");
 for (let i = 0; i < goten.length; i++) {
-    goten[i].style.opacity = "1";
+    goten[i].style.filter = "none";;
 }
         val -= 500000000;
         setInterval(() => {
@@ -231,7 +231,7 @@ image10.addEventListener('click', function() {
     if (val >= 5000000000) {
         alert("Je vais bien t'entraîner tu vas voir");
 for (let i = 0; i < piccolo.length; i++) {
-    piccolo[i].style.opacity = "1";
+    piccolo[i].style.filter = "none";;
 }
         val -= 5000000000;
         setInterval(() => {
@@ -251,7 +251,7 @@ image11.addEventListener('click', function() {
     if (val >= 50000000000) {
         alert("Je vais réussir !");
 for (let i = 0; i < gohan.length; i++) {
-    gohan[i].style.opacity = "1";
+    gohan[i].style.filter = "none";;
 }
         val -= 50000000000;
         setInterval(() => {
